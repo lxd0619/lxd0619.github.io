@@ -105,9 +105,9 @@ deploy:
   type: git
   repo:
     github:
-      url: https://1228372022@qq.com:${{ secrets.GITHUBPASSWORD }}@github.com/lxd0619/hexo_blog.git
+      url: https://github.com/lxd0619/hexo_blog.git
       branch: deploy
     gitee:
-      url: https://lxd0619:${{ secrets.GITEEPASSWORD }}@gitee.com/lxd0619/hexo_blog.git
+      url: https://gitee.com/lxd0619/hexo_blog.git
       branch: deploy
   message: 版本发布
