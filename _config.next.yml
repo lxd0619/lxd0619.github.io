@@ -77,10 +77,10 @@ creative_commons:
 # Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
 # External url should start with http:// or https://
 menu:
-  #home: / || fa fa-home
-  #about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
   #archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
@@ -195,12 +195,12 @@ footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
   since: 2020
 
-  # Icon between year and copyright info.
+  # Icon between year and copyright info. 页脚Icon
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
     name: fa fa-heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
     color: "#ff0000"
 
@@ -208,7 +208,7 @@ footer:
   copyright:
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -293,9 +293,9 @@ post_edit:
   url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/ # Link for view source
   #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/ # Link for fork & edit
 
-# Show previous post and next post in post footer if exists
+# Show previous post and next post in post footer if exists //显示上一页/下一页
 # Available values: left | right | false
-post_navigation: left
+post_navigation: right
 
 # ---------------------------------------------------------------
 # Custom Page Settings
@@ -362,8 +362,8 @@ codeblock:
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: false
-  # Scroll percent label in b2t button.
+  sidebar: false #侧边栏回到顶部
+  # Scroll percent label in b2t button. 滚动位置百分比
   scrollpercent: false
 
 # Reading progress bar
@@ -657,7 +657,7 @@ google_analytics:
 
 # Baidu Analytics
 # See: https://tongji.baidu.com
-baidu_analytics: # <app_id>
+baidu_analytics: 2b5d60113c0aeeac1d3a71c353a9126e # <app_id>
 
 # Growingio Analytics
 # See: https://www.growingio.com
@@ -678,7 +678,7 @@ leancloud_visitors:
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: true
+  security: false
 
 # Another tool to show number of visitors to each article.
 # Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
