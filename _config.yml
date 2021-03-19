@@ -106,7 +106,7 @@ deploy:
   repo:
     github:
       url: git@github.com:lxd0619/hexo_blog.git
-      branch: deploy
+      branch: gh-pages
     gitee:
       url: https://gitee.com/lxd0619/hexo_blog.git
       branch: deploy
