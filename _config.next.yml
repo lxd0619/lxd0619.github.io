@@ -11,7 +11,7 @@
 
 # Allow to cache content generation.//是否允许缓存
 cache:
-  enable: false
+  enable: true
 
 # Remove unnecessary files after hexo generate.//生成后移除不必要的文件
 minify: false
@@ -348,16 +348,16 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: default
+    light: atelier-dune-light
     dark: tomorrow-night
   prism:
     light: prism
     dark: prism-dark
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Available values: default | flat | mac
-    style:
+    style: mac
 
 back2top:
   enable: true
@@ -810,7 +810,7 @@ nprogress:
   enable: false
   spinner: true
 
-# Canvas ribbon
+# Canvas ribbon 背景彩带
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
   enable: false

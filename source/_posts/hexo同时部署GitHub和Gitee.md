@@ -7,7 +7,7 @@ categories:
     - front_end
 ---
 
-​		这大概是最简单的hexo同步部署github和gitee pages的方案了。使用Github Actions + MarketPlace中的两个Actions，[Hexo Action](https://github.com/marketplace/actions/hexo-action)和[Gitee Pages Action](https://github.com/marketplace/actions/gitee-pages-action)，这样就可以做到配置一次，以后每次推送代码即可自动部署到两个pages中。
+这大概是最简单的hexo同步部署github和gitee pages的方案了。使用Github Actions + MarketPlace中的两个Actions，[Hexo Action](https://github.com/marketplace/actions/hexo-action)和[Gitee Pages Action](https://github.com/marketplace/actions/gitee-pages-action)，这样就可以做到配置一次，以后每次推送代码即可自动部署到两个pages中。
 
 <!-- more -->
 
@@ -15,9 +15,31 @@ categories:
 
   + 先决条件
 
-    生成SSH keys并设置Secrets。
+    首先在安装了```hexo-deployer-git```的前提下，在`_config.yml`中设置
 
-``` $ ssh-keygen -t rsa -C "username@example.com" ```
+```
+deploy:
+  type: git
+  repo: <repository url>	# 项目地址
+  branch: [branch]		# 分支名
+  message: [message]		#自定义提交信息
+
+示例：
+
+deploy:
+  type: git
+  repo:
+    github:
+      url: git@github.com:lxd0619/hexo_blog.git
+      branch: gh-pages
+  message: 版本发布
+```
+
+    其实这样就可以实现`hexo deploy`命令手动发布了，但是想要推送代码自动发布请接下向下看。
+
++ 生成SSH keys并设置Secrets。
+
+    ``` $ ssh-keygen -t rsa -C "username@example.com" ```
 
 ​		生成SSH可参考[Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)。
 
@@ -72,12 +94,59 @@ jobs:
 
 ​		以上就是部署到github pages的步骤。
 
+### 配置Gitee Pages Action
 
+​		配置可直接参考[Gitee Pages Action](https://github.com/marketplace/actions/gitee-pages-action)说明文档，步骤与上文类似，纯中文，十分友好。
 
++ 准备工作
 
+    生成SSH ksys（可参考[Gitee帮助——生成/添加SSH公钥](https://gitee.com/help/articles/4181#article-header0)），之后在`Settings > Secrets `中添加生成的私钥并命名为`GITEE_RSA_PRIVATE_KEY `，以及Gitee的密码`GITEE_PASSWORD `。
+
++ 添加Github Actions工作流
+
+    需要配置的参数有：
+    
+    
+    
+    示例代码
+
+```yml
+name: Sync
+
+on: page_build
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync to Gitee
+        uses: wearerequired/git-mirror-action@master
+        env:
+          # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+        with:
+          # 注意替换为你的 GitHub 源仓库地址
+          source-repo: git@github.com:doocs/advanced-java.git
+          # 注意替换为你的 Gitee 目标仓库地址
+          destination-repo: git@gitee.com:Doocs/advanced-java.git
+
+      - name: Build Gitee Pages
+        uses: yanglbme/gitee-pages-action@main
+        with:
+          # 注意替换为你的 Gitee 用户名
+          gitee-username: yanglbme
+          # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
+          gitee-repo: doocs/advanced-java
+          # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
+          branch: main
+```
 
 
 
 
 
 参考文献
+
++ [Hexo官方文档——一键部署](https://hexo.io/zh-cn/docs/one-command-deployment)
