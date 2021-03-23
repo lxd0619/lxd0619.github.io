@@ -108,5 +108,5 @@ deploy:
       branch: gh-pages
     gitee:
       url: git@gitee.com:lxd0619/hexo_blog.git
-      branch: deploy
+      branch: gh-pages
   message: 版本发布
