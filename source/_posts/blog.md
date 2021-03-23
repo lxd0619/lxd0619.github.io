@@ -7,6 +7,8 @@ tags:
   - Tag1
 	- Tag2
 	- Tag3
+categories: 
+	- cate
 ---
 
 this is my blog

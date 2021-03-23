@@ -79,12 +79,12 @@ creative_commons:
 menu:
   home: / || fa fa-home
   about: /about/ || fa fa-user
-  tags: /tags/ || fa fa-tags
-  categories: /categories/ || fa fa-th
-  #archives: /archives/ || fa fa-archive
-  #schedule: /schedule/ || fa fa-calendar
-  #sitemap: /sitemap.xml || fa fa-sitemap
-  #commonweal: /404/ || fa fa-heartbeat
+  tags: /tags/ || fa fa-tags #                标签
+  categories: /categories/ || fa fa-th #      分类
+  archives: /archives/ || fa fa-archive #     归档
+  # schedule: /schedule/ || fa fa-calendar #  日程表
+  # sitemap: /sitemap.xml || fa fa-sitemap #  站点地图
+  # commonweal: /404/ || fa fa-heartbeat #    公益404
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -657,7 +657,7 @@ google_analytics:
 
 # Baidu Analytics
 # See: https://tongji.baidu.com
-baidu_analytics: 2b5d60113c0aeeac1d3a71c353a9126e # <app_id>
+baidu_analytics: 2b36042d52f8bcfb5ef399195885f0f9 # <app_id>  github
 
 # Growingio Analytics
 # See: https://www.growingio.com
