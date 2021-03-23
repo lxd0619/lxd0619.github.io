@@ -100,13 +100,13 @@ ignore:
 theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-# deploy:
-#   type: git
-#   repo:
-#     github:
-#       url: git@github.com:lxd0619/hexo_blog.git
-#       branch: gh-pages
-#     # gitee:
-#     #   url: git@gitee.com:lxd0619/hexo_blog.git
-#     #   branch: deploy
-#   message: 版本发布
+deploy:
+  type: git
+  repo:
+    github:
+      url: git@github.com:lxd0619/hexo_blog.git
+      branch: gh-pages
+    gitee:
+      url: git@gitee.com:lxd0619/hexo_blog.git
+      branch: deploy
+  message: 版本发布

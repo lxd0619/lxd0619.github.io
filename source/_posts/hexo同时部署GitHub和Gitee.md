@@ -17,7 +17,9 @@ categories:
 
     生成SSH keys并设置Secrets。
 
-``` $ ssh-keygen -t rsa -C "username@example.com" ```，生成SSH可参考[Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)。
+``` $ ssh-keygen -t rsa -C "username@example.com" ```
+
+​		生成SSH可参考[Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)。
 
 ​		生成之后将私钥添加到所在项目的``` Settings > Secrets ```中，命名为``` Deploy Keys```（可更改，但需与下文中的```secrets.DEPLOY_KEY```相匹配）。
 
