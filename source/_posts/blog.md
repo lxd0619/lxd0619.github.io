@@ -9,6 +9,7 @@ tags:
 	- Tag3
 categories: 
 	- cate
+comments: true
 ---
 
 this is my blog

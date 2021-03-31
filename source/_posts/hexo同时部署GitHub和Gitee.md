@@ -104,11 +104,7 @@ jobs:
 
 + 添加Github Actions工作流
 
-    需要配置的参数有：
-    
-    
-    
-    示例代码
+    示例代码（仔细阅读注释）
 
 ```yml
 name: Sync
@@ -143,9 +139,7 @@ jobs:
           branch: main
 ```
 
-
-
-
+注：如果运行Actions报错可参考官方[错误及解决方案](https://github.com/marketplace/actions/gitee-pages-action#%E9%94%99%E8%AF%AF%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88)；我就遇到了`Error: Need phone captcha validation, please follow gitee wechat subscription and bind your account.`的错误，参考方案关注了 Gitee 微信公众号，并绑定帐号，即可正常运行。
 
 参考文献
 
