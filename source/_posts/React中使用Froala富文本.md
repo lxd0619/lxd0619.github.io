@@ -6,7 +6,6 @@ tags:
     - 富文本
 categories:
     - front_end
-comments: true
 ---
 
 此编辑器有不同语言的各种版本，此为React版。
@@ -135,7 +134,7 @@ this.refs.froalaEditor.editor.edit.off(); 	//禁用
 ```
 
 此为最终效果
-![image-20210421170138414](\images\image-20210421170138414.png)
+![image-20210421170138414](/hexo_blog/images/image-20210421170138414.png)
 
 #### 参考
 
