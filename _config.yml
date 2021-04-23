@@ -110,3 +110,13 @@ deploy:
     #   url: git@gitee.com:lxd0619/hexo_blog.git
     #   branch: gh-pages
   message: 版本发布
+
+# algolia search
+
+algolia:
+  applicationID: "OXVTCLEUAV" # Application ID
+  apiKey: "1988cba0a4def3df05538ed46da0d20e" # Search-only API key
+  indexName: "hexo_blog"
+# export HEXO_ALGOLIA_INDEXING_KEY=fe850be39ca19f8368bfb7dc829932bb API key # Use Git Bash
+# hexo clean
+# hexo algolia
