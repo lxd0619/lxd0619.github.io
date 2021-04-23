@@ -616,7 +616,7 @@ gitalk:
 # For more information: https://utteranc.es
 utterances:
   enable: true
-  repo: https://github.com/lxd0619/hexo_blog # Github repository name
+  repo: lxd0619/hexo_blog # Github repository name
   # Available values: pathname | url | title | og:title
   issue_term: pathname
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
