@@ -1,5 +1,6 @@
 ---
 title: hexo自动同步部署GitHub和Gitee pages
+comments: true
 date: 2021-03-23 13:55:12
 tags:
     - hexo
