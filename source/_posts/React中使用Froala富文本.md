@@ -8,7 +8,7 @@ categories:
     - front_end
 ---
 
-此编辑器有不同语言的各种版本，此为React版。
+Froala富文本有不同语言的各种版本，此为React版。
 
 <!-- more -->
 
@@ -30,7 +30,7 @@ import "froala-editor/js/plugins/video.min.js";
 
 import FroalaEditorComponent from 'react-froala-wysiwyg';
 
-			<FroalaEditorComponent
+            <FroalaEditorComponent
                 ref="froalaEditor"
                 tag="textarea"
                 config={{
@@ -54,7 +54,7 @@ import FroalaEditorComponent from 'react-froala-wysiwyg';
                   imageUploadURL: uploadURL,
                   // 图片上传附带参数，视频类似
                   imageUploadParams: {parmars},
-				  //请求头
+				          //请求头
                   requestHeaders: { 
                     utoken: Storage.get("token")
                   },
@@ -104,7 +104,7 @@ this.refs.froalaEditor.editor.edit.on();	//启用
 this.refs.froalaEditor.editor.edit.off(); 	//禁用
 ```
 
-注：后台保存图片需要返回给前台图片的路径，而且格式必须是这样的，否则会报错
+{% label @注：后台保存图片需要返回给前台图片的路径，而且格式必须是这样的，否则会报错 %}
 
 ```
 {link:"http://xxxxx.jpg"}
