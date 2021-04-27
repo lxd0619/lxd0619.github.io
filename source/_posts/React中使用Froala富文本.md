@@ -8,7 +8,7 @@ categories:
     - front_end
 ---
 
-Froala富文本有不同语言的各种版本，此为React版。
+Froala富文本有不同语言的各种版本，此为React版.
 
 <!-- more -->
 
