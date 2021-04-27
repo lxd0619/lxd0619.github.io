@@ -441,7 +441,7 @@ font:
     family:
 
 # ---------------------------------------------------------------
-# SEO Settings
+# SEO Settings 搜索引擎优化
 # See: https://theme-next.js.org/docs/theme-settings/seo
 # ---------------------------------------------------------------
 
@@ -468,7 +468,7 @@ yandex_site_verification:
 
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
-baidu_site_verification:
+baidu_site_verification: 1nnEdR35VH
 
 # ---------------------------------------------------------------
 # Third Party Plugins & Services Settings
