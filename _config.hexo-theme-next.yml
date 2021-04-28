@@ -83,7 +83,7 @@ menu:
   categories: /categories/ || fa fa-th #      分类
   archives: /archives/ || fa fa-archive #     归档
   # schedule: /schedule/ || fa fa-calendar #  日程表
-  # sitemap: /sitemap.xml || fa fa-sitemap #  站点地图
+  sitemap: /sitemap.xml || fa fa-sitemap #  站点地图
   # commonweal: /404/ || fa fa-heartbeat #    公益404
 
 # Enable / Disable menu icons / item badges.
@@ -390,7 +390,7 @@ github_banner:
   title: Follow me on GitHub
 
 # ---------------------------------------------------------------
-# Font Settings
+# Font Settings 样式
 # ---------------------------------------------------------------
 # Find fonts on Google Fonts (https://fonts.google.com)
 # All fonts set here will have the following styles:
@@ -441,7 +441,7 @@ font:
     family:
 
 # ---------------------------------------------------------------
-# SEO Settings 搜索引擎优化
+# SEO Settings 搜索引擎优化设置
 # See: https://theme-next.js.org/docs/theme-settings/seo
 # ---------------------------------------------------------------
 
@@ -471,13 +471,13 @@ yandex_site_verification:
 baidu_site_verification: code-1nnEdR35VH
 
 # ---------------------------------------------------------------
-# Third Party Plugins & Services Settings
+# Third Party Plugins & Services Settings 第三方插件和服务设置
 # See: https://theme-next.js.org/docs/third-party-services/
 # More plugins: https://github.com/next-theme/awesome-next
 # You may need to install the corresponding dependency packages
 # ---------------------------------------------------------------
 
-# Math Formulas Render Support
+# Math Formulas Render Support  数学公式渲染支持
 # Warning: Please install / uninstall the relevant renderer according to the documentation.
 # See: https://theme-next.js.org/docs/third-party-services/math-equations
 # Server-side plugin: https://github.com/next-theme/hexo-filter-mathjax
@@ -542,7 +542,7 @@ quicklink:
   ignores:
 
 # ---------------------------------------------------------------
-# Comments Settings
+# Comments Settings 评论设置
 # See: https://theme-next.js.org/docs/third-party-services/comments
 # ---------------------------------------------------------------
 
@@ -643,11 +643,11 @@ rating:
 add_this_id:
 
 # ---------------------------------------------------------------
-# Statistics and Analytics
+# Statistics and Analytics  统计和分析
 # See: https://theme-next.js.org/docs/third-party-services/statistics-and-analytics
 # ---------------------------------------------------------------
 
-# Google Analytics
+# Google Analytics  谷歌分析
 # See: https://analytics.google.com
 google_analytics:
   tracking_id: # <app_id>
@@ -655,7 +655,7 @@ google_analytics:
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
 
-# Baidu Analytics
+# Baidu Analytics 百度分析
 # See: https://tongji.baidu.com
 baidu_analytics: 2b36042d52f8bcfb5ef399195885f0f9 # <app_id>  github.io
 
@@ -701,7 +701,7 @@ busuanzi_count:
   post_views_icon: far fa-eye
 
 # ---------------------------------------------------------------
-# Search Services
+# Search Services 搜索服务
 # See: https://theme-next.js.org/docs/third-party-services/search-services
 # ---------------------------------------------------------------
 
@@ -727,7 +727,7 @@ local_search:
   preload: false
 
 # ---------------------------------------------------------------
-# Chat Services
+# Chat Services 聊天服务
 # See: https://theme-next.js.org/docs/third-party-services/chat-services
 # ---------------------------------------------------------------
 
@@ -804,10 +804,10 @@ motion:
     # Only for Pisces | Gemini.
     sidebar: fadeInUp
 
-# Progress bar in the top during page loading.
+# Progress bar in the top during page loading. 页面加载上部进度条
 # For more information: https://github.com/rstacruz/nprogress
 nprogress:
-  enable: false
+  enable: true
   spinner: true
 
 # Canvas ribbon 背景彩带

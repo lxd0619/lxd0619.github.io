@@ -14,7 +14,8 @@ timezone: "Asia/Shanghai"
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://lxd0619.github.io/
-permalink: :year/:month/:day/:title/
+root: /
+permalink: :title.html # :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -120,3 +121,9 @@ algolia:
 # export HEXO_ALGOLIA_INDEXING_KEY=fe850be39ca19f8368bfb7dc829932bb API key # Use Git Bash
 # hexo clean
 # hexo algolia
+
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
